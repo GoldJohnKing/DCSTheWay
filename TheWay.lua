@@ -123,10 +123,11 @@ function LuaExportAfterNextFrame()
 	local loZ = camPos['p']['z']
 	local elevation = LoGetAltitude(loX, loZ)
 	local coords = LoLoCoordinatesToGeoCoordinates(loX, loZ)
-	local model = LoGetSelfData()["Name"];
+	local selfData = LoGetSelfData()
+    if selfData == nil then return end
 
     local message = {}
-    message["model"] = model
+    message["model"] = selfData["Name"]
     message["coords"] = {}
     message["coords"]["lat"] = tostring(coords.latitude)
     message["coords"]["long"] = tostring(coords.longitude)
