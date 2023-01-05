@@ -121,8 +121,8 @@ public class AH64 {
                 }
             }
             //press ENTER twice
-            commandArray.put(new JSONObject().put("device", "29").put("code", "3006").put("delay", "10").put("activate", "1").put("addDepress", "true"));
-            commandArray.put(new JSONObject().put("device", "29").put("code", "3006").put("delay", "10").put("activate", "1").put("addDepress", "true"));
+            commandArray.put(new JSONObject().put("device", "29").put("code", "3006").put("delay", "50").put("activate", "1").put("addDepress", "true"));
+            commandArray.put(new JSONObject().put("device", "29").put("code", "3006").put("delay", "50").put("activate", "1").put("addDepress", "true"));
         }
         return commandArray;
     }
@@ -234,8 +234,8 @@ public class AH64 {
                 }
             }
             //press ENTER twice
-            commandArray.put(new JSONObject().put("device", "30").put("code", "3006").put("delay", "10").put("activate", "1").put("addDepress", "true"));
-            commandArray.put(new JSONObject().put("device", "30").put("code", "3006").put("delay", "10").put("activate", "1").put("addDepress", "true"));
+            commandArray.put(new JSONObject().put("device", "30").put("code", "3006").put("delay", "50").put("activate", "1").put("addDepress", "true"));
+            commandArray.put(new JSONObject().put("device", "30").put("code", "3006").put("delay", "50").put("activate", "1").put("addDepress", "true"));
         }
         return commandArray;
     }
